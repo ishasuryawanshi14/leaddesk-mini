@@ -44,7 +44,7 @@ export default function LeadForm() {
       className="py-20 max-w-3xl mx-auto px-6"
     >
       <h2 className="text-4xl font-bold text-center mb-10">
-       Let's Discuss Your Project!"
+       Let's Discuss Your Project!
       
       </h2>
 
