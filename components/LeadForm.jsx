@@ -8,6 +8,7 @@ export default function LeadForm() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: zodResolver(leadSchema),
@@ -22,6 +23,7 @@ export default function LeadForm() {
       },
       body: JSON.stringify(data),
     });
+    
 
     const result = await response.json();
 
@@ -30,6 +32,7 @@ export default function LeadForm() {
 
     if (response.ok) {
       alert("Lead submitted successfully!");
+      reset();
     } else {
       alert(result.error || "Something went wrong");
     }
@@ -105,8 +108,9 @@ export default function LeadForm() {
         <div>
           <select
             {...register("budget")}
-            className="w-full border rounded-lg p-3"
-          >
+           className="w-full border rounded-lg p-3 text-gray-500"
+>
+          
             <option value="">Select Budget</option>
 
             <option value="1000-5000">
