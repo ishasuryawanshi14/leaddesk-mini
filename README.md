@@ -36,8 +36,3 @@ LeadDesk Mini is a full-stack lead management system built using **Next.js**, **
 
 ```bash
 npm run dev
-
-
-## Author
-
-**Isha Suryawanshi**
