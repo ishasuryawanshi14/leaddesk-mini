@@ -83,7 +83,7 @@ export default function LeadForm() {
   )}
 </div>
 
-        {/* Email */}
+        
 
         <div>
           <input
@@ -100,7 +100,7 @@ export default function LeadForm() {
           )}
         </div>
 
-        {/* Budget */}
+        
 
         <div>
           <select
@@ -133,7 +133,7 @@ export default function LeadForm() {
           )}
         </div>
 
-        {/* Message */}
+        
 
         <div>
           <textarea
@@ -150,7 +150,7 @@ export default function LeadForm() {
           )}
         </div>
 
-        {/* Submit Button */}
+      
 
         <button
           type="submit"
